@@ -2640,7 +2640,7 @@ reply(lang.wait())
 let res = await fetch(global.api('alfa', '/api/sound/'+command, {}, 'apikey'))
 if (!res.ok) return await res.text()
 let img = await res.buffer()
-alpha.sendFile(m.chat, img, 'sound.mp3', lang.ok(), m)
+alpha.sendMessage(m.chat, {audio: img, mimetype:'audio/mpeg', ptt:true }, {quoted:m})
 db.data.users[m.sender].limit -= 1
 }
 break
