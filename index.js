@@ -279,7 +279,7 @@ if (lang === "id") {
 
  //FUN
 
-if (kuismath.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (kuismath.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = kuismath[m.sender.split('@')[0]][0]
 hadiah = kuismath[m.sender.split('@')[0]][1]
@@ -291,7 +291,7 @@ delete kuismath[m.sender.split('@')[0]]
 }
 
 
-if (('family100'+m.chat in _family100) && isCmd) {
+if (('family100'+m.chat in _family100) && !isCmd) {
 kuis = true
 let room = _family100['family100'+m.chat]
 let teks = budy.toLowerCase().replace(/[^\w\s\-]+/, '')
@@ -313,7 +313,7 @@ alpha.sendText(m.chat, caption, m, { contextInfo: { mentionedJid: parseMention(c
 if (isWin || isSurender) delete _family100['family100'+m.chat]
 }
 
-if (tebakgambar.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (tebakgambar.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = tebakgambar[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -323,7 +323,7 @@ delete tebakgambar[m.sender.split('@')[0]]
 }
 
 
-if (tebakkata.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (tebakkata.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = tebakkata[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -333,7 +333,7 @@ delete tebakkata[m.sender.split('@')[0]]
 }
 
 
-if (tebakbendera.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (tebakbendera.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = tebakbendera[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -343,7 +343,7 @@ delete tebakbendera[m.sender.split('@')[0]]
 }
 
 
-if (caklontong.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (caklontong.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = caklontong[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -353,7 +353,7 @@ delete caklontong[m.sender.split('@')[0]]
 }
 
 
-if (susunkata.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (susunkata.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = susunkata[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -363,7 +363,7 @@ delete susunkata[m.sender.split('@')[0]]
 }
 
 
-if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = tebakkalimat[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -373,7 +373,7 @@ delete tebakkalimat[m.sender.split('@')[0]]
 }
 
 
-if (siapaaku.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (siapaaku.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = siapaaku[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -384,7 +384,7 @@ delete siapaaku[m.sender.split('@')[0]]
 
 
 
-if (tekateki.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (tekateki.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = tekateki[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -394,7 +394,7 @@ delete tekateki[m.sender.split('@')[0]]
 }
 
 
-if (tebakkabupaten.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (tebakkabupaten.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = tebakkabupaten[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -404,7 +404,7 @@ delete tebakkabupaten[m.sender.split('@')[0]]
 }
 
 
-if (tebakkimia.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (tebakkimia.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = tebakkimia[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -414,7 +414,7 @@ delete tebakkimia[m.sender.split('@')[0]]
 }
 
 
-if (tebaklirik.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (tebaklirik.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = tebaklirik[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
@@ -424,7 +424,7 @@ delete tebaklirik[m.sender.split('@')[0]]
 }
 
 
-if (tebaktebakan.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+if (tebaktebakan.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
 kuis = true
 jawaban = tebaktebakan[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
