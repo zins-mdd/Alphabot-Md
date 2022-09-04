@@ -26,7 +26,7 @@ global.language = indonesia  //change indonesia to english if you don't understa
 
 // Other
 // Other
-global.botname = "ZINS BOTZ MD" //namabot kalian
+global.botname = "MULTI BOTZ" //namabot kalian
 global.ownername= "ZINS STORE REAL" //nama kalian
 global.myweb ="https://api.zeeoneofc.xyz" //bebas asal jan hapus
 global.youtube = "https://youtube.com/channel/UC1SOSlVONbQV-o0NHNxu55w" //bebas asal jan hapus
